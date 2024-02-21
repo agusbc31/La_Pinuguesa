@@ -3,9 +3,11 @@
             <title>La piñuguesa</title>
             <style>
                 #cabecera {
-                    background-color: #DDB967;
+                    background-image: url(IMAGENES/FONDO/FONDO_ARRIBA_3.jpg);
                     width: 100%;
                     height: 170px;
+                    float: left;
+                    display: flex;
                 }
                 #logo {
                     width: 150px;
@@ -13,14 +15,92 @@
                     padding-right: 10px;
                     margin-top: 10px;
                     margin-bottom: 20px;
+                    float: left;
+                    display: flex;
                 }
-                #inicio, #productos {
+                #productos {
                     width: 150px;
+                    height: 150px;
+                    background-image: url("IMAGENES/BOTONES/PRODUCTOS/PNG_PRODUCTOS_NO_TEXTO.png");
+                    background-size: cover;
+                    float: left;
+                    display: flex;
+                    border-color: rgba(0, 0, 0, 0);
+                }
+                #productos:hover {
+                    width: 150px;
+                    height: 150px;
+                    background-image: url("IMAGENES/BOTONES/PRODUCTOS/PNG_PRODUCTOS_NO_TEXTO_HOVER.png");
+                    background-size: cover;
+                    float: left;
+                    display: flex;
+                    border: 10px solid transparent;
+                    border-color: rgba(0, 0, 0, 0);
+                    transition: 0.5s ease;
+                }
+                #noticias {
+                    width: 150px;
+                    height: 150px;
+                    background-image: url("IMAGENES/BOTONES/NOVEDADES/NOVEDADES.png");
+                    background-size: cover;
+                    float: left;
+                    display: flex;
+                    border-color: rgba(0, 0, 0, 0);
+                }
+                #noticias:hover {
+                    width: 150px;
+                    height: 150px;
+                    background-image: url("IMAGENES/BOTONES/NOVEDADES/NOVEDADES_HOVER.png");
+                    background-size: cover;
+                    float: left;
+                    display: flex;
+                    border: 10px solid transparent;
+                    border-color: rgba(0, 0, 0, 0);
+                    transition: 0.5s ease;
+                }
+                #pedir {
+                    width: 300px;
+                    height: 150px;
                     padding-bottom: 20px;
+                    background-image: url("IMAGENES/BOTONES/PEDIR/PEDIR.png");
+                    background-size: cover;
+                    float: left;
+                    border-color: rgba(0, 0, 0, 0);
+                    display: flex;
+                }
+                #pedir:hover {
+                    width: 300px;
+                    height: 150px;
+                    background-image: url("IMAGENES/BOTONES/PEDIR/PEDIR_HOVER.png");
+                    background-size: cover;
+                    float: left;
+                    display: flex;
+                    border: 10px solid transparent;
+                    border-color: rgba(0, 0, 0, 0);
+                    transition: 0.2s ease;
+                }
+                #inicio {
+                    width: 150px;
+                    height: 150px;
+                    padding-bottom: 20px;
+                    background-image: url("IMAGENES/BOTONES/INICIO/PNG_SIN_TEXTO.png");
+                    background-size: cover;
+                    float: left;
+                    border-color: rgba(0, 0, 0, 0);
+                    display: flex;
+                    
                 }
                 #inicio:hover {
                     width: 150px;
-                    padding-bottom: 20px; 
+                    height: 150px;
+                    background-image: url("IMAGENES/BOTONES/INICIO/PNG_SIN_TEXTO_HOVER.png");
+                    background-size: cover;
+                    float: left;
+                    display: flex;
+                    border: 10px solid transparent;
+                    border-color: rgba(0, 0, 0, 0);
+                    transition: 0.5s ease;
+
                 }
 
 
@@ -31,8 +111,10 @@
     <body>
         <div id="cabecera">
             <img src="IMAGENES/LOGO.png" id="logo">
-            <img src="IMAGENES/BOTONES/INICIO/PNG_FULL_TEXTO.png" id="inicio">
-            <img src="IMAGENES/BOTONES/PRODUCTOS/PNG_PRODUCTOS_TEXTO.png" id="productos">
+            <div id="inicio"></div>
+            <div id="productos"></div>
+            <div id="noticias"></div>
+            <div id="pedir"></div>
         </div>
     </body>
 </html>
