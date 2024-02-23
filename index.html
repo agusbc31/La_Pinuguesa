@@ -62,6 +62,7 @@
                     width: 300px;
                     height: 150px;
                     padding-bottom: 20px;
+                    margin-left: 500px;
                     background-image: url("IMAGENES/BOTONES/PEDIR/PEDIR.png");
                     background-size: cover;
                     float: left;
@@ -82,6 +83,7 @@
                 #inicio {
                     width: 150px;
                     height: 150px;
+                    margin-left: 20px;
                     padding-bottom: 20px;
                     background-image: url("IMAGENES/BOTONES/INICIO/PNG_SIN_TEXTO.png");
                     background-size: cover;
@@ -102,6 +104,64 @@
                     transition: 0.5s ease;
 
                 }
+                #inicio_sesion {
+                    width: 300px;
+                    height: 150px;
+                    padding-bottom: 20px;
+                    margin-left: 0px;
+                    margin-right: 0px;
+                    margin-top: 25px;
+                    background-image: url("IMAGENES/BOTONES/INICIAR_SESIÓN/INICIO.png");
+                    background-size: contain;
+                    float: left;
+                    border-color: rgba(0, 0, 0, 0);
+                    display: flex;
+                    background-repeat: no-repeat;
+                }
+                #inicio_sesion:hover {
+                    width: 300px;
+                    height: 150px;
+                    margin-top: 25px;
+                    padding-bottom: 20px;
+                    margin-left: 30px;
+                    background-image: url("IMAGENES/BOTONES/INICIAR_SESIÓN/INICIO_HOVER.png");
+                    background-size: contain;
+                    float: left;
+                    border-color: rgba(0, 0, 0, 0);
+                    display: flex;
+                    background-repeat: no-repeat;
+                    transition: 0.2s ease;
+
+
+                }
+                #sesiones {
+                    width: 30%;
+                    height: 30%;
+                }
+                #novedad1, #novedad2, #novedad3{
+                    width: 33.33%;
+                    text-align: center;
+                }
+                #novedad1{
+                    background-color: #4F3824;
+                    
+                }
+                #novedad2{
+                    background-color: #D1603D;
+                }
+                #novedad3 {
+                    background-color: #DDB967;
+                }
+                #Hamburguesa, #Burrito, #Helado {
+                    width: 300px;
+                    height: 300px;
+                    margin-top: 75px;
+                }
+                #ObtenerInformacion{
+                    width: 250px;
+                    margin-top: 20px;
+                    border-radius: 15%;
+                }
 
 
 
@@ -115,6 +175,26 @@
             <div id="productos"></div>
             <div id="noticias"></div>
             <div id="pedir"></div>
+            <div id="sesiones">
+             <div id="inicio_sesion"></div>
+            </div>
+        </div>
+        <div id="novedades">
+            <div id="novedad1">
+                <img id ="Hamburguesa" src="IMAGENES/INICIO/HamburguesaPina.jpg" alt="">
+                <p>"La Piñuguesa" con 300g de carne y piña</p>
+                <input> 
+            </div>
+            <div id="novedad2">
+                <img id="Burrito" src="IMAGENES/INICIO/BurritoPina.jpg" alt="">
+                <p>Burrito con revuelto de verduras, carnes y piña</p>
+            </div>
+            <div id="novedad3">
+                <img id="Helado" src="IMAGENES/INICIO/HeladoPina.jpg" alt="">
+                <p>Helado de frutas con tropezones de piña</p>
+                <img id="ObtenerInformacion" src="IMAGENES/INICIO/ObtenerInformacion3.jpg" alt="">
+            </div>
+        </div>
         </div>
     </body>
 </html>
