@@ -1,5 +1,8 @@
 <html>
     <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="IMAGENES/LilitaOne-Regular(1).ttf" rel="stylesheet">
             <title>La piñuguesa</title>
             <style>
                 #cabecera {
@@ -104,22 +107,34 @@
                 }
                 #novedades{
                     width: 100%;
-                    height: 500px;
+                    height: 600px;
                     margin-top: 10px;
                     float: left;
                     display: flex;
                 }
                 #novedad1, #novedad2, #novedad3{
                     width: 33.33%;
+                    text-align: center;
                 }
                 #novedad1{
                     background-color: #4F3824;
+                    
                 }
                 #novedad2{
                     background-color: #D1603D;
                 }
-                #novedad3{
+                #novedad3 {
                     background-color: #DDB967;
+                }
+                #Hamburguesa, #Burrito, #Helado {
+                    width: 300px;
+                    height: 300px;
+                    margin-top: 75px;
+                }
+                #ObtenerInformacion{
+                    width: 250px;
+                    margin-top: 20px;
+                    border-radius: 15%;
                 }
 
 
@@ -137,9 +152,20 @@
             <div id="pedir"></div>
         </div>
         <div id="novedades">
-            <div id="novedad1"></div>
-            <div id="novedad2"></div>
-            <div id="novedad3"></div>
+            <div id="novedad1">
+                <img id ="Hamburguesa" src="IMAGENES/INICIO/HamburguesaPina.jpg" alt="">
+                <p>"La Piñuguesa" con 300g de carne y piña</p>
+                <input> 
+            </div>
+            <div id="novedad2">
+                <img id="Burrito" src="IMAGENES/INICIO/BurritoPina.jpg" alt="">
+                <p>Burrito con revuelto de verduras, carnes y piña</p>
+            </div>
+            <div id="novedad3">
+                <img id="Helado" src="IMAGENES/INICIO/HeladoPina.jpg" alt="">
+                <p>Helado de frutas con tropezones de piña</p>
+                <img id="ObtenerInformacion" src="IMAGENES/INICIO/ObtenerInformacion3.jpg" alt="">
+            </div>
         </div>
     </body>
 </html>
